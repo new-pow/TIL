@@ -121,7 +121,34 @@ git config --global --list
 
 
 #### Github에서 원격 저장소 생성
-1. 
+
+1. Github에서 원격 저장소 생성
+  * New repository
+
+2. 로컬 저장소와 원격 저장소 연결
+  * Git에서 원격 저장소 생성 후, 저장소 주소 복사
+  * 연결하고 싶은 폴더를 vscode로 열기 (이미 로컬저장소로서 init된 상태)
+  * terminal을 통해 로컬저장소와 원격저장소를 연결
+```
+git remote add _origin (URL)_ 
+```
+    + origin 은 다른 이름으로 할 수 있음.
+
+3. 확인 조회
+```
+git remote -v 
+```
+추가했던 원격 저장소의 이름과 주소가 출력된다.
+연결을 끊고 싶다면 (삭제 아님) `git remote rm origin` 혹은 `git remote remove origin` 으로 작성할 수 있다.
+
+4. 원격 저장소에 커밋 업로드
+> 미리 로컬 저장소에 커밋을 생성해 둔 것을 업로드할 수 있다. (modify - add - commit - push)
+  * 로컬 저장소에서 commit 을 생성한다.
+  * 로컬 저장소의 commit을 원격 저장소에 업로드한다.
+```
+git push origin master
+```
+
 
 
 
