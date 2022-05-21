@@ -110,6 +110,15 @@ git config --global --list
       5. `-p` 파일의 변경 내용도 같이 보여줍니다.
       6. `-3` 원하는 갯수만큼의 내역을 보여줍니다.
 
+7. 아래 명령어로 해당하는 커밋 위치로 상태를 돌릴 수 있다.
+```
+git reset (option) <commit ID>
+```
+* options
+  + `--soft` : staging area로 돌려놓기 (before `commit`)
+  + `--mixed` : working directory 상태로 돌려놓기 (before `add`)
+  + `--hard` : working directory 상태로 돌아가고 wd내용도 마지막 커밋상태로 돌아가기
+
 
 
 ## Github
