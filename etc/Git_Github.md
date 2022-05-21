@@ -47,26 +47,44 @@ git config --global --list
 #### Git 저장소 만들기 (로컬 저장소)
 > Git 저장소는 3가지 영역으로 나뉘어져 있다.
 
-**Working Directory (Working Tree)** : 사용자의 일반적인 작업이 일어나는 곳
+---
+
+**Working Directory (Working Tree)** <br>
+사용자의 일반적인 작업이 일어나는 곳 <br>
+수정한 파일들. 버전으로 만들어지기 전단계
 
 ▼
 
-**Staging Area (Index)** : 커밋을 위한 파일 및 폴더가 추가되는 곳
+**Staging Area (Index)** <br>
+commit을 위한 파일 및 폴더가 추가되는 곳<br>
+버전을 만들기 원하는 파일을 저장하는 곳
+
 
 ▼
 
-**Commits (Repository)** : staging area에 있던 파일 및 폴더의 변경사항 commit을 저장하는 곳
+**Commits (Repository)** <br>
+staging area에 있던 파일 및 폴더의 변경사항 commit을 저장하는 곳 <br>
+만들어진 버전
+
+---
 
 
 1. 버전을 만들 폴더를 만든다. (일반 폴더)
 
+<br>
 
 2. `git init` 명령어 입력으로 폴더를 Git으로 관리하는 것을 명령한다.
+
+  * git init : Initialize repository
+
   * <master> 표시가 위치 옆에 표시된다.
   (Mac은 처음에 표시가 안되는데 이는 추가 설정이 필요하다.)
 
+<br>
 
 3. `git add` 명령어로 폴더를 WD에서 SA로 추가한다.
+  * git add : add to staging area
+
 
    ```bash
    # file 추가
@@ -79,10 +97,13 @@ git config --global --list
    git add .
    ```
 
+<br>
 
-4. `git commit` 명령어로 SA에서 Commits에 저장.
+4. `git commit` 명령어로 SA에서 Commits에 저장
+  * git commit : create version
 
-   ```bash
+
+```bash
    # with message
    git commit -m "my first commit"
    ```
@@ -90,7 +111,10 @@ git config --global --list
    - 커밋 메시지는 현재 변경사항들을 잘 나타낼 수 있도록 의미있게 작성하는 것을 권장.
    - 각각의 커밋은 SHA-1 알고리즘에 의해 반환된 고유의 해시값을 ID로 가진다.
 
+<br>
+
 5. `git status` 명령어로 현재 상태를 알 수 있다. 수시로 확인하면 좋다.
+  * git status : working tree status
 
    - commit 전 단계들에 있는 파일의 상태를 알려준다.
    - 상태
@@ -100,7 +124,10 @@ git config --global --list
        - Modified : 수정되었지만 아직 Staging Area에는 반영하지 않음.
        - Staged : Staging Area에 올라간 상태 (commit해야함)
 
+<br>
+
 6. `git log` 명령어로 커밋의 내역을 조회할 수 있다.
+  * git log : show version
 
    1. 명령어 옵션
       1. `--oneline` 한 줄로 요약해서 보여줍니다.
@@ -109,6 +136,8 @@ git config --global --list
       4. `--reverse` 커밋 내역의 순서를 반대로 보여줍니다. (최신이 가장 아래)
       5. `-p` 파일의 변경 내용도 같이 보여줍니다.
       6. `-3` 원하는 갯수만큼의 내역을 보여줍니다.
+
+<br>
 
 7. 아래 명령어로 해당하는 커밋 위치로 상태를 돌릴 수 있다.
 ```
