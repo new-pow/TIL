@@ -1,0 +1,5 @@
+{
+    "pasteImage.encodePath": "urlEncodeSpace",
+    "pasteImage.basePath": "${currentFileDir}",
+    "pasteImage.path": "${currentFileDir}/images"
+}
