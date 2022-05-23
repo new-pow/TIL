@@ -47,8 +47,6 @@ git config --global --list
 #### Git 저장소 만들기 (로컬 저장소)
 > Git 저장소는 3가지 영역으로 나뉘어져 있다.
 
----
-
 **Working Directory (Working Tree)** <br>
 사용자의 일반적인 작업이 일어나는 곳 <br>
 수정한 파일들. 버전으로 만들어지기 전단계
@@ -68,12 +66,13 @@ staging area에 있던 파일 및 폴더의 변경사항 commit을 저장하는 
 
 ---
 
+<br>
 
-1. 버전을 만들 폴더를 만든다. (일반 폴더)
+1. 버전관리를 할 만들 폴더를 만든다. (일반 폴더)
 
 <br>
 
-2. `git init` 명령어 입력으로 폴더를 Git으로 관리하는 것을 명령한다.
+2. 해당 디렉토리로 터미널 이동 후, `git init` 명령어 입력으로 폴더를 Git으로 관리하는 것을 명령한다.
 
   * git init : Initialize repository
 
@@ -82,7 +81,7 @@ staging area에 있던 파일 및 폴더의 변경사항 commit을 저장하는 
 
 <br>
 
-3. `git add` 명령어로 폴더를 WD에서 SA로 추가한다.
+3. `git add` 명령어로 폴더를 Working Directory에서 Staging Area로 추가한다.
   * git add : add to staging area
 
 
@@ -99,7 +98,7 @@ staging area에 있던 파일 및 폴더의 변경사항 commit을 저장하는 
 
 <br>
 
-4. `git commit` 명령어로 SA에서 Commits에 저장
+4. `git commit` 명령어로 Staging Area에서 Commits에 저장
   * git commit : create version
 
 
@@ -186,8 +185,7 @@ git remote -v
 ```
 git push origin master
 ```
-
-
+<br>
 
 
 
