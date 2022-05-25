@@ -69,3 +69,33 @@ public class Sample {
 
 }
 ```
+
+<br>
+
+## 객체 변수는 공유되지 않는다.
+> 클래스에서 가장 중요한 부분은 객체 변수의 값이 독립적으로 유지된다는 점이다.
+
+``` java
+class Animal {
+	String name;
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}
+
+public class Sample {
+	public static void main(String[] args) {
+		Animal cat = new Animal();         // 객체 1
+		cat.setName("Woozi");
+		System.out.println(cat.name);      // 객체변수 1
+		
+		Animal dog = new Animal();         // 객체 2
+		dog.setName("MG");
+		System.out.println(dog.name);      // 객체변수 2
+	}
+
+}
+```
+
+작동 방식은 같지만 서로 다른 두 개의 계산기로 계산값을 저장하고 있는 것과 같다.
