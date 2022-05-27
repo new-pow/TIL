@@ -45,6 +45,7 @@ public class Human {
 }
 ```
 
+`this` means `object`
 
 
 
