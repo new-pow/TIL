@@ -11,19 +11,34 @@
 
 <br>
 
-### SCHEMA 스키마
+## SCHEMA 스키마
 > 데이터 테이블의 합. 데이터베이스
 
 * 데이터베이스 생성
 ``` sql
+CREATE DATABASE sqldb1;
+```
+```sql
 CREATE SCHEMA sqldb DEFAULT CHARACTER SET utf8;
-
+```
+```sql
 CREATE SCHEMA sqldb DEFAULT CHARACTER SET utf8mb4;
 ```
 
 * 데이터베이스 삭제
 ``` sql
-DROP SCHEMA sqldb;
+DROP DATABASE sqldb1;
+```
+```sql
+DROP SCHEMA sqldb2;
+```
+
+* 데이터베이스 확인
+```sql
+SHOW DATABASE sqldb1;
+```
+```sql
+SHOW SCHEMA sqldb2;
 ```
 
 * 사용 데이터베이스 변경
@@ -31,7 +46,9 @@ DROP SCHEMA sqldb;
 USE sqldb;
 ```
 
-### 테이블 Table
+<br>
+
+## 테이블 Table
 * 테이블 생성
 ``` sql
 CREATE TABLE product(
