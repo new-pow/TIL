@@ -7,6 +7,7 @@
     1. [CREATE](/Users/saehim/Desktop/TIL/Database/SQL/CREATE.MD)
     2. [ALTER](/Users/saehim/Desktop/TIL/Database/SQL/ALTER.MD)
     3. [DROP](#drop)
+
 - [데이터 조작어 DML](/Users/saehim/Desktop/TIL/Database/SQL/DML.md) : Data Manipulation Language
 - [데이터 제어어 DCL](/Users/saehim/Desktop/TIL/Database/SQL/DCL.md) : Data Control Language
 
