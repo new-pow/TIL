@@ -1,0 +1,23 @@
+# JDK
+* 목차
+    1. [JDK란?](#jdk란)
+    2. [JDK 설치 방법](#jdk-설치-방법)
+    3. [환경변수 설정](#환경변수-설정)
+        + [환경변수란?](#환경변수란)
+
+---
+
+## JDK란?
+> **The Java Development Kit (JDK)** is one of three core technology packages used in Java programming, along with the _JVM (Java Virtual Machine)_ and the _JRE (Java Runtime Environment)_.
+
+* The **JVM** is the Java platform component that executes programs.
+* The **JRE** is the on-disk part of Java that creates the JVM.
+* The JDK allows developers to create Java programs that can be executed and run by the JVM and JRE.
+
+
+
+## JDK 설치 방법
+## 환경변수 설정
+### 환경변수란?
+
+* 있을 수 있는 에러
