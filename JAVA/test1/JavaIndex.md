@@ -14,17 +14,17 @@
 ---
 
 ## 변수 (Variable)
-* [변수의 특성]
-* 변수 이름을 위한 명명 규칙(naming convention)
-* 변수 선언
-* 변수 사용법
+* [변수의 특성](/Users/newp/TIL/JAVA/test1/변수/변수의특성.md)
+* [변수 이름을 위한 명명 규칙(naming convention)](/Users/newp/TIL/JAVA/test1/변수/변수명명규칙.md)
+* [변수 선언](/Users/newp/TIL/JAVA/test1/변수/변수선언.md)
+* [변수 사용법](/Users/newp/TIL/JAVA/test1/변수/변수사용법.md)
 
 
 ## 연산자 (코드 실행 결과)
-- 비교 연산자
-- 반복문 (while 문)
-- sum 구하는 방법
-- 증감 연산자 위치에 따른 결과 구분
+- [비교 연산자](/Users/newp/TIL/JAVA/test1/연산자/비교연산자.md)
+- [반복문 (while 문)](/Users/newp/TIL/JAVA/test1/연산자/반복문while.md)
+- [sum 구하는 방법](/Users/newp/TIL/JAVA/test1/연산자/sum.md)
+- [증감 연산자](/Users/newp/TIL/JAVA/test1/연산자/증감연산자.md)
 
 
 ## 제어문 (코드)
