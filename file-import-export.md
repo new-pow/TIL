@@ -1,0 +1,1 @@
+# my.cnf 파일 수정 for Mac
