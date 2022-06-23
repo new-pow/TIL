@@ -129,3 +129,30 @@ System.out.println(hour+" "+min);
 ```
 
 ## 2480 주사위 세 개
+> 22/6/23
+
+- 주사위 3개를 굴린 후, 상금을 계산하시오.
+
+```java
+int dice1 = sc.nextInt();
+int dice2 = sc.nextInt();
+int dice3 = sc.nextInt();
+int price = 0;
+
+if (dice1==dice2 && dice2==dice3) {
+    // 눈 3개가 동일 상금 계산
+    price = 10000 + (dice1*1000);
+} else if (dice1==dice2 || dice2==dice3) {
+    // 눈 2개가 동일 case1 상금 계산
+    price = 1000 + dice2*100;
+} else if (dice1==dice3) {
+    // 눈 2개가 동일 case2 상금 계산
+    price = 1000 + dice1*100;
+} else {
+    // 눈 3개가 모두 다를 때, 최대 눈금을 확인하고, 상금 계산
+    price = Math.max(Math.max(dice1, dice2),Math.max(dice2, dice3))*100;
+}
+
+// 출력
+System.out.println(price);
+```
