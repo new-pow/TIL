@@ -13,6 +13,22 @@ $("선택자").eq("숫자");
 - 음수를 설정하면 역순으로 선택합니다.
 - 만약 인덱스 번호에 해당하는 요소가 없으면 null을 반환합니다.
 
+### 활용 예시
+```javascript
+$moviePoster.each(function(index){
+    let img = $img.eq(index);
+    let movieInfo = $movieInfo.eq(index);
+    $(this).on('mouseover',function(){
+        img.css('opacity',0.4);
+        movieInfo.css('opacity',1);
+    })
+    $(this).on('mouseout',function(){
+        img.css('opacity',1);
+        movieInfo.css('opacity',0);
+    })
+});
+```
+
 ## get()
 > 선택한 요소의 인덱스 번호에 해당하는 값을 찾는다. DOM개체 반환
 
