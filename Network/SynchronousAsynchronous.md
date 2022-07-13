@@ -31,3 +31,8 @@
 - 즉, 요청 본문은 `requestBody`. 응답 본문은 `response Body`를 담아서 보냄
 - `@RequestBody` 어노테이션과 `@ResponseBody` 어노테이션이 각각 HTTP 요청 바디를 자바 객체로 변환하고, 자바 객체를 다시 HTTP 응답 바디로 변환
 - `@ResponseBody`가 붙은 파라미터에는 HTTP 요청의 본문 body부분이 그대로 전달
+
+---
+# 연관글
+# 참고
+- MLP 특강
